@@ -1,16 +1,17 @@
-### Hi there 👋
+import random
+import statistics
 
-<!--
-**cafe24-sybae/cafe24-sybae** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 랜덤한 숫자의 리스트 생성
+data = [random.randint(0, 100) for _ in range(10)]
+print(f"Generated Data: {data}")
 
-Here are some ideas to get you started:
+# 기본 통계 계산
+mean = statistics.mean(data)
+median = statistics.median(data)
+mode = statistics.mode(data)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+print(f"Mean: {mean}")
+print(f"Median: {median}")
+print(f"Mode: {mode}")
+
+test11
